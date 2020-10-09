@@ -1,0 +1,64 @@
+#Menu{
+    text-align: center;
+}
+*{
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+div{
+    background-color: gray;
+    border: solid 2px;
+    margin: 25px;
+    overflow: hidden;
+    font-size: 24px;
+}
+div>h1{
+    float: right;
+    width: 150px;
+    text-align: right;
+    widows: 100px;
+    border:solid;
+    margin-top: -2px;
+    margin-right: -2px;
+    font-size: 28px;
+    text-align: center;
+    background-color: coral;
+    clear: both;
+}
+#Chicken h1{
+    background-color: red;
+}
+#Beef h1{
+    background-color: orange;
+}
+#Sushi h1{
+    background-color: maroon;
+}
+/* In the mobile view (equal to or less than 767px) */
+@media(max-width: 767px)
+{
+div{
+     width: 80%;
+}
+}
+
+
+/*In the desktop view (992px and above)*/
+
+@media(min-width:992px){
+
+    div{
+        width: 27%;
+        display: inline-block;
+    }
+}
+
+
+// In the tablet view (between 768px and 991px, inclusively)
+@media(min-width:768px) and (max-width: 991px) {
+    #Chicken, #Beef{
+        margin:2%;
+        width: 45%;
+        display: inline-block;
+    }
+}
